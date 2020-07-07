@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <div class="container flex-center">
+    <div class="col-lg-6 wow fadeIn mb-5 text-center text-lg-left">
+      <h1>Contáctanos</h1>
+      <div class="conteiner">
+        <form action="/contacto/" method="POST"> {% csrf_token %}
+          <p>Asunto: <input type="text" name="asunto"> </p>
+
+          <p>EMAIL: <input type="text" name="email"> </p>
+
+          <p>Mensaje: <input type="text" name="mensaje"> </p>
+
+          <input type="submit" value="Enviar">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock  %}

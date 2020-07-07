@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="card-group">
+    <div class="card">
+        <img class="card-img-top" src="{% static '/img/2.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Ajuste de Motor</h5>
+            <p class="card-text">tiene al menos dos procesos delicados: el rectificado del cigüeñal y el ajuste de
+                cojinetes. Al estar en constante fricción, las partes metálicas sufren abolladuras o se desgastan.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="{% static '/img/1.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Cambios de Aceite</h5>
+            <p class="card-text">Para evitar problemas y ayudar al buen funcionamiento del auto y la prolongación de su
+                vida útil, es importante saber cuándo cambiar el aceite y filtro de tu auto. </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="{% static '/img/3.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Mantención por Kilometraje</h5>
+            <p class="card-text"> Para prevenir eventos fortuitos y daños en tu Vehículo, te recomendamos la Mantención
+                por Kilometraje que corresponde realizarse cada 10.000 kms donde se examina el funcionamiento general de
+                tu auto y reemplazo de elementos indispensables. </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="card-img-top" src="{% static '/img/4.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Pintura de Automóvil</h5>
+            <p class="card-text"> Agrega una descripción de est Pintura y desabolladura de automoviles al horno precio
+                economico e artículo </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+</div>
+{% endblock  %}
